@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remove-project name="AOSPA/android_build" />
+  <project name="WhiteRose01R/android_build" path="build/make" remote="github" revision="vauxite-staging-update" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  
+  <remove-project name="AOSPA/android_build_release" />
+  <project name="WhiteRose01R/android_build_release" path="build/release" remote="github" revision="vauxite-staging-update" />
+
+  <remove-project name="AOSPA/android_build_soong" />
+  <project name="WhiteRose01R/android_build_soong" path="build/soong" remote="github" revision="vauxite-staging-update" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <remove-project name="AOSPA/android_frameworks_base" />
+  <project name="WhiteRose01R/android_frameworks_base" path="frameworks/base" remote="github-ssh" revision="vauxite" />
+
+  <remove-project name="AOSPA/android_frameworks_native" />
+  <project name="WhiteRose01R/android_frameworks_native" path="frameworks/native" remote="github" revision="vauxite-staging-update" />
+
+  <remove-project name="AOSPA/android_frameworks_av" />
+  <project name="WhiteRose01R/android_frameworks_av" path="frameworks/av" remote="github" revision="vauxite-staging-update" />
+
+  <remove-project name="platform/frameworks/opt/telephony" />
+  <project name="WhiteRose01R/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="github" revision="vauxite-staging-update" />
+
+  <remove-project name="AOSPA/android_packages_apps_Settings" />
+  <project name="WhiteRose01R/android_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="vauxite-staging-update" />
+
+  <remove-project name="platform/frameworks/libs/systemui" />
+  <project name="WhiteRose01R/android_frameworks_libs_systemui" path="frameworks/libs/systemui" remote="github" revision="vauxite-staging-update" />
+
+  <remove-project name="AOSPA/android_system_core" />
+  <project name="WhiteRose01R/android_system_core" path="system/core" remote="github" revision="vauxite-staging-update" />
+
+  <remove-project name="AOSPA/android_system_sepolicy" />
+  <project name="WhiteRose01R/android_system_sepolicy" path="system/sepolicy" remote="github" revision="vauxite-staging-update" />
+
+  <remove-project name="AOSPA/android_art" />
+  <project name="WhiteRose01R/android_art" path="art" remote="github" revision="vauxite-staging-update" />
+
+  <project name="WhiteRose01R/android_hardware_qcom_display" path="hardware/qcom/display" remote="github" revision="vauxite-8450" />
+
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_display-commonsys" />
+  <project name="WhiteRose01R/android_vendor_qcom-opensource_display-commonsys" path="vendor/qcom/opensource/commonsys/display" remote="github" revision="vauxite" />
+
+  <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_display" />
+  <project name="WhiteRose01R/android_vendor_qcom_opensource_commonsys-intf_display" path="vendor/qcom/opensource/commonsys-intf/display" remote="github" revision="vauxite" >
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
+  </project>
+
+  <remove-project name="AOSPA/android_hardware_qcom_thermal" />
+  <project name="WhiteRose01R/android_hardware_qcom_thermal" path="hardware/qcom/thermal" remote="github" revision="vauxite-staging-update" />
+
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_power" />
+  <project name="WhiteRose01R/android_vendor_qcom-opensource_power" path="vendor/qcom/opensource/power" remote="github" revision="vauxite" />
+
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_usb" />
+  <project name="WhiteRose01R/android_vendor_qcom-opensource_usb" path="vendor/qcom/opensource/usb" remote="github" revision="vauxite" />
+
+  <project name="WhiteRose01R/android_device_xiaomi_marble-kernel" path="device/xiaomi/marble-kernel" remote="github" revision="beryl" />
+
+  <remove-project name="AOSPA/android_device_qcom_sepolicy_vndr" />
+  <project name="WhiteRose01R/android_device_qcom_sepolicy_vndr" path="device/qcom/sepolicy_vndr" remote="github" revision="vauxite" />
+
+  <remove-project name="platform/system/vold" />
+  <project name="WhiteRose01R/android_system_vold" path="system/vold" remote="github" revision="vauxite" />
+
+  <remove-project name="AOSPA/android_packages_apps_ParanoidSettings" />
+  <project name="WhiteRose01R/android_packages_apps_ParanoidSettings" path="packages/apps/ParanoidSettings" remote="github" revision="vauxite" />
+
+  <remove-project name="AOSPA/android_packages_apps_Paranoid_SystemUI" />
+  <project name="WhiteRose01R/android_packages_apps_Paranoid_SystemUI" path="packages/apps/ParanoidSystemUI" remote="github" revision="vauxite" />
+
+  <remove-project name="AOSPA/android_packages_services_Telecomm" />
+  <project name="WhiteRose01R/android_packages_services_Telecomm" path="packages/services/Telecomm" remote="github" revision="vauxite" />
+
+  <remove-project name="android_vendor_google_pixel" />
+  <project name="WhiteRose01R/android_vendor_google_pixel" path="vendor/google/pixel" remote="github" revision="vauxite" clone-depth="1" />
+
+  <remove-project name="AOSPA/android_packages_apps_Launcher3" />
+  <project name="WhiteRose01R/android_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="github" revision="vauxite" />
+
+  <remove-project name="AOSPA/android_packages_modules_Bluetooth" />
+  <project name="WhiteRose01R/android_packages_modules_Bluetooth" path="packages/modules/Bluetooth" remote="github" revision="vauxite" />
+
+  <remove-project name="AOSPA/android_hardware_interfaces" />
+  <project name="WhiteRose01R/android_hardware_interfaces" path="hardware/interfaces" remote="github" revision="vauxite-staging-update" />
+
+  <remove-project name="AOSPA/android_vendor_aospa" />
+  <project path="vendor/aospa" name="WhiteRose01R/android_vendor_aospa" remote="github" revision="vauxite-staging-update" >
+      <linkfile src="build.sh" dest="rom-build.sh" />
+  </project>
+
+  <remove-project name="AOSPA/android_device_qcom_common" />
+  <project path="device/qcom/common" name="WhiteRose01R/android_device_qcom_common" remote="github" revision="vauxite-staging-update" >
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
+
+  <project path="hardware/dolby-vision" name="WhiteRose01R/hardware_dolby-vision" remote="github" revision="16" />
+
+  <project path="device/xiaomi/marble" name="WhiteRose01R/android_device_xiaomi_marble" remote="github" revision="vauxite" />
+  <project path="device/xiaomi/sm8450-common" name="WhiteRose01R/android_device_xiaomi_sm8450-common" remote="github-ssh" revision="vauxite-staging-update" />
+  <project path="hardware/xiaomi" name="WhiteRose01R/android_hardware_xiaomi" remote="github" revision="vauxite" />
+  <project path="vendor/xiaomi/marble" name="WhiteRose01R/proprietary_vendor_xiaomi_marble" remote="github" revision="vauxite" />
+  <project path="vendor/xiaomi/sm8450-common" name="WhiteRose01R/proprietary_vendor_xiaomi_sm8450-common" remote="github" revision="vauxite" />
+  <project path="vendor/xiaomi/camera" name="WhiteRose01R/proprietary_vendor_xiaomi_camera" remote="github" revision="vauxite-marble" />
+  <project path="vendor/xiaomi/marble-firmware" name="WhiteRose01R/proprietary_vendor_xiaomi_marble-firmware" remote="github" revision="vauxite" />
+  <remove-project name="proprietary_vendor_qcom_common" />
+  <project path="vendor/qcom/common" name="WhiteRose01R/proprietary_vendor_qcom_common" remote="github" revision="vauxite-staging-update" />
+
+</manifest>
